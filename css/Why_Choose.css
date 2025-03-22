@@ -1,0 +1,212 @@
+/* General Styles */
+
+  
+  .why-container {
+    text-align: center;
+    padding: 0px 90px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #f3f3f3;
+  }
+  
+  .why-title {
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 40px;
+   font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Card Container */
+  .why-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card Style */
+  /* .why-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+
+
+  .why-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.15), /* Subtle base shadow */
+      0 0 15px rgba(3, 175, 161, 0.3), /* Outer glow with theme color */
+      0 0 30px rgba(3, 175, 161, 0.15); /* Extended outer glow */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+      0 6px 15px rgba(0, 0, 0, 0.2), /* Deeper base shadow */
+      0 0 25px rgba(3, 175, 161, 0.4), /* Brighter glow */
+      0 0 50px rgba(3, 175, 161, 0.2); /* More vibrant outer glow */
+  }
+
+  /* .why-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transform: scale(0.8);
+    border-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+  } */
+  .why-card:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .why-card:hover img {
+    transform: scale(1.1) rotate(10deg);
+  }
+  /* .why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    background-color: #03afa1;
+  } */
+  
+  /* Icon Style */
+  .why-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    color: red;
+  }
+  
+  /* Text Style */
+  .why-text {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+  }
+  .why-text:hover {
+    /* color: #03afa1; */
+  }
+  
+    @media (max-width: 500px) {
+    .why-container {
+      padding: 20px !important;
+     }
+        .why-container {
+      padding: 20px !important;
+     }
+     
+  }
+  
+   @media (max-width: 767px) {
+    .why-container {
+      padding: 20px !important;
+     }
+        .why-container {
+      padding: 20px !important;
+     }
+     
+  }
+    @media (min-width: 769px)and (max-width:1150px) {
+    .why-container {
+      padding: 30px !important;
+     }
+        .why-container {
+      padding: 30px !important;
+     }
+     
+  }
+  
+  
+  /* Responsive Design */
+  @media (min-width: 1024px) {
+    .why-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .why-card {
+      height: 200px;
+      width: 100%;
+      max-width: 800px !important;
+    }
+  
+    .why-title {
+      font-size: 32px;
+    }
+    
+  }
+
+  @media (max-width: 500px) {
+    .why-cards {
+       
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+       
+      }
+      .why-container {
+      padding: 20px !important;
+     }
+     
+   
+      .why-title {
+        font-size: 25px;
+        color: #333333;
+        margin-bottom: 40px;
+       font-weight: bold;
+        letter-spacing: 1.5px;
+      }
+       
+  
+  }
+  @media (min-width: 501px)and (max-width:767) {
+    
+    
+    .why-cards {
+       
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+       
+      }
+      .why-title {
+        font-size: 18px;
+       
+      }
+       .why-container {
+      padding: 20px !important;
+     }
+      .why-title {
+        font-size: 25px;
+        color: #333333;
+        margin-bottom: 40px;
+       font-weight: bold;
+        letter-spacing: 1.5px;
+      }
+  }

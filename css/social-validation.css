@@ -1,0 +1,88 @@
+.social-validation-section-carousel {
+    overflow: hidden; /* Hide overflow for a clean effect */
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 40px;
+  }
+  
+  .social-validation-section-image-list {
+    display: flex;
+    align-items: center;
+    gap: 3vw; /* Adjust spacing between images relative to screen size */
+    animation: scrollMarquee 20s linear infinite; /* Smooth scrolling animation */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+  }
+  
+  .social-validation-section-image-list li {
+    flex-shrink: 0;
+  }
+  
+  .social-validation-section-image-list img {
+    height: 8vh; /* Responsive height */
+    object-fit: contain;
+    max-width: 100%; /* Ensure images fit within their container */
+  }
+  
+  /* Keyframes for infinite scrolling animation */
+  /* @keyframes scrollMarquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+
+  /* @keyframes animate {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes animate2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  } */
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 20px)); /* Move entire list left */
+    }
+  }
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .social-validation-section-image-list {
+      gap: 2vw;
+      animation: scrollMarquee 25s linear infinite; /* Slower scrolling for smaller devices */
+    }
+  
+    .social-validation-section-image-list img {
+      height: 6vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-validation-section-image-list {
+      gap: 5vw;
+      animation: scrollMarquee 30s linear infinite; /* Adjust duration for better readability */
+    }
+  
+    .social-validation-section-image-list img {
+      height: 5vh;
+    }
+  }
+  
