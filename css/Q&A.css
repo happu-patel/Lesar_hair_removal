@@ -1,0 +1,102 @@
+.outer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5% 0;
+  background: #f3f3f3;
+  border-radius: 20px;
+  text-align: center
+}
+
+.qa-container {
+  max-width: 70%;
+  margin: 0 auto
+}
+
+.qa-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333
+}
+
+.accordion {
+  text-align: start
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: .3s
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd
+}
+
+.accordion-header h6 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px
+}
+
+.accordion-bod {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 12px;
+  background: #fff;
+  transition: max-height .5s, padding .3s ease-in-out
+}
+
+.accordion-item.active .accordion-bod {
+  max-height: 400px
+}
+
+.accordion-header .arrow {
+  display: inline-block;
+  width: 10px;
+  padding: 3.5px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  transition: transform .3s
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(225deg)
+}
+
+@media (max-width:768px) {
+  .qa-container {
+    max-width: 100%
+  }
+
+  .qa-heading {
+    font-size: 25px
+  }
+
+  .outer-container {
+    padding: 20px
+  }
+
+  .bg-shaodw {
+    padding-bottom: 20px
+  }
+}
+
+@media (max-width:480px) {
+  .qa-heading {
+    font-size: 1.2rem
+  }
+}

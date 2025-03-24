@@ -1,0 +1,60 @@
+.social-validation-section-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 40px
+}
+
+.social-validation-section-image-list {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  animation: 20s linear infinite scrollMarquee;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: max-content
+}
+
+.social-validation-section-image-list li {
+  flex-shrink: 0
+}
+
+.social-validation-section-image-list img {
+  height: 8vh;
+  object-fit: contain;
+  max-width: 100%
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 20px))
+  }
+}
+
+@media (max-width:768px) {
+  .social-validation-section-image-list {
+    gap: 2vw;
+    animation: 25s linear infinite scrollMarquee
+  }
+
+  .social-validation-section-image-list img {
+    height: 6vh
+  }
+}
+
+@media (max-width:480px) {
+  .social-validation-section-image-list {
+    gap: 5vw;
+    animation: 30s linear infinite scrollMarquee
+  }
+
+  .social-validation-section-image-list img {
+    height: 5vh
+  }
+}
