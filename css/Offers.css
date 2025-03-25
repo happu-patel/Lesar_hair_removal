@@ -54,14 +54,14 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: var(--primary);
-  border: 5px solid var(--bs-white);
+  background: #03afa1;
+  border: 5px solid #fff;
   transition: .5s
 }
 
 .service-carousel .owl-dot.active {
-  background: var(--bs-white);
-  border-color: var(--primary)
+  background: #fff;
+  border-color: #03afa1;
 }
 
 .card {
@@ -94,7 +94,7 @@
 }
 
 .Book-button {
-  background-color: var(--primary);
+  background-color: #03afa1;
   color: #fff;
   border: 2px solid transparent;
   text-decoration: none;
