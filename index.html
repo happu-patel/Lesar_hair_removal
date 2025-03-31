@@ -697,23 +697,21 @@
     <!-- banner -->
     <div class="banner">
                    <picture>
-              <source
-                media="(max-width: 480px)"
-                srcset="images/banner-480w.webp"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="images/banner-768w.webp"
-              />
-              <source
-                media="(max-width: 1200px)"
-                srcset="images/banner-1200w.webp"
-              />
-              <img id="banner-image" src="images/banner.webp" class="banner-img w-100 ms-auto"
-     alt="Hair Transplant Banner" width="100%" height="auto"
-     fetchpriority="high" decoding="async">
-
-            </picture>
+    <source media="(max-width: 480px)" srcset="images/banner-480w.webp" />
+    <source media="(max-width: 768px)" srcset="images/banner-768w.webp" />
+    <source media="(max-width: 1200px)" srcset="images/banner-1200w.webp" />
+    <img id="banner-image" 
+         src="images/banner.webp" 
+         class="banner-img w-100 ms-auto"
+         alt="Hair Transplant Banner" 
+         width="1920" height="600"
+         sizes="(max-width: 480px) 480px, 
+                (max-width: 768px) 768px, 
+                (max-width: 1200px) 1200px, 
+                1920px"
+         fetchpriority="high" 
+         decoding="async">
+  </picture>
       <!--<img class="banner-image" src="./images/banner.webp" alt="banner" loading="lazy" />-->
    <!--    <img -->
    <!--   class="banner-image"-->
